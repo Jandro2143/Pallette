@@ -1,19 +1,25 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import PrimeVue from 'primevue/config';
+import Button from 'primevue/button';
+import Ripple from 'primevue/ripple';
+import StyleClass from 'primevue/styleclass';
+import 'primevue/resources/themes/saga-blue/theme.css'; // PrimeVue theme
+import 'primevue/resources/primevue.min.css'; // PrimeVue core styles
+import 'primeicons/primeicons.css'; // PrimeVue icons
+import 'primeflex/primeflex.css'; // PrimeFlex utility classes
 
-// Import PrimeVue styles
-import 'primevue/resources/themes/saga-blue/theme.css'; // theme
-import 'primevue/resources/primevue.min.css'; // core css
-import 'primeicons/primeicons.css'; // icons
 
+// Create and configure the app
 const app = createApp(App);
 
 // Use PrimeVue
 app.use(PrimeVue);
 
-// Optionally, you can add PrimeVue components globally
-import Button from 'primevue/button';
+// Register PrimeVue components and directives globally
 app.component('Button', Button);
+app.directive('ripple', Ripple);
+app.directive('styleclass', StyleClass);
 
+// Mount the app to the DOM
 app.mount('#app');

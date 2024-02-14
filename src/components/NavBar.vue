@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative">
-        <img src="/images/blocks/logos/hyper-light.svg" alt="Image" height="50" />
+        <img src="../assets/PallettePhoto-Photoroom.png" alt="Image" height="100" />
         <a v-ripple class="cursor-pointer block lg:hidden text-gray-400 mt-1 p-ripple"
             v-styleclass="{ selector: '@next', enterClass: 'hidden', leaveToClass: 'hidden', hideOnOutsideClick: true }">
             <i class="pi pi-bars text-4xl"></i>
@@ -66,9 +66,8 @@
                 </li>
             </ul>
             <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none border-gray-800 py-3 lg:py-0 mt-3 lg:mt-0">
-                <Button label="Login" class="p-button-text font-bold"></Button>
-                <Button label="Register" class="ml-3 font-bold"></Button>
             </div>
         </div>
     </div>
 </template>
+
