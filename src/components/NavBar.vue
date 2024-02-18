@@ -1,20 +1,20 @@
 <template>
-    <div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative">
+    <div class="bg-gray-800 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative">
         <img src="../assets/PallettePhoto-Photoroom.png" alt="Image" height="100" />
         <a v-ripple class="cursor-pointer block lg:hidden text-gray-400 mt-1 p-ripple"
             v-styleclass="{ selector: '@next', enterClass: 'hidden', leaveToClass: 'hidden', hideOnOutsideClick: true }">
             <i class="pi pi-bars text-4xl"></i>
         </a>
-        <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 px-6 lg:px-0 shadow-2 lg:shadow-none">
+        <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-gray-800 left-0 top-100 px-6 lg:px-0 shadow-2 lg:shadow-none">
             <section></section>
-            <ul class="list-none p-0 m-0 flex lg:align-items-center text-gray-400 select-none flex-column lg:flex-row">
+            <ul class="list-none p-0 m-0 flex lg:align-items-center text-gray-100 select-none flex-column lg:flex-row">
                 <li>
                     <a v-ripple class="flex px-0 lg:px-5 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer p-ripple"
                         v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true }">
                         <span>Products</span>
                         <i class="pi pi-chevron-down ml-auto lg:ml-3"></i>
                     </a>
-                    <div class="lg:absolute bg-gray-800 hidden origin-top left-0 top-100 w-full">
+                    <div class="lg:absolute bg-gray-700 hidden origin-top left-0 top-100 w-full">
                         <div class="flex flex-wrap p-6">
                             <div class="w-full lg:w-6 mb-4 lg:mb-0">
                                 <span class="block font-normal text-2xl mb-4 text-white">Products</span>

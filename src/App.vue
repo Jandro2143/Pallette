@@ -1,6 +1,7 @@
 <template>
   <NavBar/>
   <InfoPage/>
+  <AboutUs/>
   <NavigateToContact/>
   <Footer class="Footer"/>
 </template>
@@ -8,6 +9,7 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import InfoPage from './components/InfoPage.vue'
+import AboutUs from './components/AboutUs.vue'
 import NavigateToContact from './components/NavigateToContact.vue'
 import Footer from './components/Footer.vue'
 
@@ -16,6 +18,7 @@ export default {
   components: {
     InfoPage,
     NavBar,
+    AboutUs,
     NavigateToContact,
     Footer
   }
